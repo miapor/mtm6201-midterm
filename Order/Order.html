@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/style.css">
+    <script src="https://kit.fontawesome.com/89eb024b8d.js" crossorigin="anonymous"></script>
+</head>
+
+<body role="main" class="orderBody">
+<!-- skip link -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- two buttons of navigation for favorite or going back -->
+    <header class="orderHeader" role="navigation">
+        <div class="hdButtons back">
+            <a href="../Index.html">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+        </div>
+
+
+        <div class="hdButtons favorite">
+            <a href="#favorite">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <div class="whiteGap"></div>
+
+    <section class="orderDetails" role="banner">
+        <center>
+            
+            <!-- information about what user is about to buy -->
+            <div class="nameAndDetails" role="banner">
+                <h1>Chipotle cheesy Chicken</h1>
+                <p>A signature flame-grilled chicken patty<br>topped with smoked beef</p>
+            </div>
+
+
+            <picture role="img">
+                <source srcset="../Images/720X720_ChickenBurger.png" media="(max-width: 720px)">
+                <source srcset="../Images/1600X1600_ChickenBurger.png" media="(min-width: 1600px)">
+                <img src="../Images/1600X1600_ChickenBurger.png" alt="placeholder">
+            </picture>
+
+            <!-- different size of burger -->
+            <div class="foodSize" id="main-content">
+
+                <div class="sizeRadio-container">
+                    <!-- Small -->
+                    <div class="small container" role="radio">
+                        <input type="radio" id="radio1" name="radios" value="burgers">
+                        <label for="radio1">S</label>
+                    </div>
+
+                    <!-- Medium -->
+                    <div class="medium container" role="radio">
+                        <input type="radio" id="radio2" name="radios" value="pizza">
+                        <label for="radio2">M</label>
+                    </div>
+
+                    <!-- Large -->
+                    <div class="large container" role="radio">
+                        <input type="radio" id="radio3" name="radios" value="cakes">
+                        <label for="radio3">L</label>
+                    </div>
+
+                </div>
+            </div>
+
+        </center>
+    </section>
+
+    <!-- quantity of burgers -->
+    <section class="number-input" role="toolbar">
+        <button class="minus">-</button>
+        <input type="text" value="1" />
+        <button class="plus">+</button>
+    </section>
+
+    <!-- Total price -->
+    <section class="orderToCart" role="note">
+        <div class="price">
+            <p>price<br><span>$ 20.95</span></p>
+        </div>
+        <div class="goToCart" role="button">
+            <a href="../Cart/cart.html">
+                <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Go To cart</button>
+            </a>
+        </div>
+        <div class="gap" ></div>
+    </section>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-navbar" role="navigation">
+
+        <a href="../Index.html" class="red"> <i class="fa-brands fa-microsoft"></i>Home</a>
+        <a href="#favorites"> <i class="fa-regular fa-heart"></i>Favorites</a>
+        <a href="#account"> <i class="fa-regular fa-user"></i>Account</a>
+        <a href="#more"> <i class="fa fa-ellipsis-h"></i>More</a>
+    </nav>
+</body>
+
+</html>

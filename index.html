@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OurShop</title>
+    <link rel="stylesheet" type="text/css" href="./Styles/style.css">
+    <script src="https://kit.fontawesome.com/89eb024b8d.js" crossorigin="anonymous"></script>
+</head>
+
+<body role="main" id="home">
+<!-- skip link -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navbar part -->
+    <Header class="homeHeader" role="banner">
+
+
+        <div class="item hamburgerMenu">☰</div> <!-- Hamburger Menu Icon -->
+        <div class="item location">
+            <!-- Location icon and the location -->
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Ottawa, <span>ON</span></p>
+        </div>
+        <!-- User Image -->
+        <div class="item userImage" role="img">
+            <img src="./Images/User.jpg" alt="Your Logo">
+        </div>
+    </header>
+
+    <!-- Greetinh Section -->
+    <section class="greeting" role="none">
+        <h3>Hey!</h3>
+        <p>Let's get your order</p>
+    </section>
+
+    <!-- Searching part -->
+    <div class="search-container" role="searchbox">
+        <input type="text" class="search-input" placeholder="Search our delicious burgers">
+        <button type="button"><i class="fas fa-search search-icon"></i></button>
+    </div>
+
+    <!-- list of foods as input -->
+    <section class="listOfFoods" id="main-content">
+
+        <div class="radio-container">
+            <!-- Food 1 -->
+            <div class="container" role="radio">
+                <input type="radio" id="radio1" name="radios" value="burgers">
+                <label for="radio1">
+                    <picture>
+                        <source srcset="./Images/960X960_Burger.jpg" media="(max-width: 960px)">
+                        <source srcset="./Images/1600X1600_Burger.jpg" media="(min-width: 1600px)">
+                        <img src="./Images/1600X1600_Burger.jpg" alt="placeholder">
+                    </picture role="img">
+                    <span>Burgers</span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </label>
+            </div>
+
+            <!-- Food 2 -->
+            <div class="container" role="radio">
+                <input type="radio" id="radio2" name="radios" value="pizza">
+                <label for="radio2">
+                    <picture role="img">
+                        <source srcset="./Images/960X960_Pizza.jpg" media="(max-width: 960px)">
+                        <source srcset="./Images/1600X1600_Pizza.jpg" media="(min-width: 1600px)">
+                        <img src="./Images/1600X1600_Pizza.jpg" alt="placeholder">
+                    </picture>
+                    <span> Pizza </span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </label>
+            </div>
+
+            <!-- Food 3 -->
+            <div class="container" role="radio">
+                <input type="radio" id="radio3" name="radios" value="cakes">
+                <label for="radio3">
+                    <picture role="img">
+                        <source srcset="./Images/960X960_Cakes.jpg" media="(max-width: 960px)">
+                        <source srcset="./Images/1600X1600_cakes.jpg" media="(min-width: 1600px)">
+                        <img src="./Images/1600X1600_cakes.jpg" alt="placeholder">
+                    </picture>
+                    <span> Cakes </span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </label>
+            </div>
+
+    </section>
+
+    <!-- Popular food section -->
+    <section class="popular" role="banner">
+        <div class="title">
+            <h2>Popular</h2>
+            <a href="#">View all <i class="fa-solid fa-angle-right"></i></a>
+        </div>
+
+
+        <div class="container">
+            <div class="inContainer">
+                <center>
+                    <picture role="img">
+                        <source srcset="./Images/720X720_ChickenBurger.png" media="(max-width: 720px)">
+                        <source srcset="./Images/1600X1600_ChickenBurger.png" media="(min-width: 1600px)">
+                        <img src="./Images/1600X1600_ChickenBurger.png" alt="placeholder">
+                    </picture>
+                </center>
+
+            </div>
+
+            <div class="nameAndPrice">
+                <h4>Chipotle Cheesy Chicken</h4>
+                <p class="price">$20.95</p>
+            </div>
+
+            <p class="details">Chicken Burger</p>
+
+            <center role="button"><a href="./Order/Order.html"><button type="submit">Order</button></a></center>
+
+        </div>
+
+        <div class="gap" role="none"></div>
+    </section>
+
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-navbar" role="navigation">
+
+        <a href="#home" class="red"> <i class="fa-brands fa-microsoft"></i>Home</a>
+        <a href="#favorites"> <i class="fa-regular fa-heart"></i>Favorites</a>
+        <a href="#account"> <i class="fa-regular fa-user"></i>Account</a>
+        <a href="#more"> <i class="fa fa-ellipsis-h"></i>More</a>
+    </nav>
+</body>
+
+</html>
